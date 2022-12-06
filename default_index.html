@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./webfonts/all.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <title>colors</title>
+    <style>
+      body {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
+
+      #left {
+        width: 5vw;
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+        float: left;
+        position: fixed;
+      }
+
+      .icon_house,
+      .icon_bar {
+        margin: 2rem 0;
+        text-align: center;
+      }
+
+      .icon_house {
+        position: absolute;
+        bottom: 0%;
+        left: 25%;
+      }
+
+      .icon_house a,
+      .icon_bar i {
+        font-size: 2rem;
+        color: gray;
+      }
+
+      #right {
+        width: 95vw;
+        height: 100vh;
+        float: right;
+      }
+
+      #right iframe {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(241, 245, 251);
+
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- 一直排選單 -->
+    <div id="left">
+
+      <div class="icon_bar">
+
+        <div class="btn-group dropend">
+          <button type="button" class="btn dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <!-- Dropdown menu links -->
+            <li style="padding: 0 1rem ;"> <a href="./round01.html" target="iframe"
+                style="color:gray; text-decoration:none;">Round 01</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="icon_house">
+        <a href="./default_index.html">
+          <i class="fa-solid fa-house"></i>
+        </a>
+      </div>
+
+    </div>
+    <!-- main區 -->
+    <div id="right">
+
+      <iframe src="./main.html" name="iframe"></iframe>
+
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.js"></script>
+  </body>
+
+</html>
